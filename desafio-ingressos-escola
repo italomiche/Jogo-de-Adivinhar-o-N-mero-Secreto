@@ -1,0 +1,15 @@
+
+alunos = int(input("Digite a quantidade de alunos: "))
+monitores = int(input("Digite a quantidade de monitores: "))
+convidados = int(input("Digite a quantidade de convidados: "))
+
+total = alunos + monitores + convidados
+
+if total <= 100 and convidados <= 20:
+    print("Evento autorizado! Todos podem participar.")
+elif total > 100 and convidados > 20:
+    print("Evento não autorizado! O limite de ingressos e de convidados foi ultrapassado.")
+elif total > 100:
+    print("Evento não autorizado! O limite de 100 ingressos foi ultrapassado.")
+else:
+    print("Evento não autorizado! O limite de 20 convidados foi ultrapassado.")
