@@ -1,0 +1,17 @@
+
+import matplotlib.pyplot as plt
+
+participantes = ['Alunos', 'Monitores', 'Convidados']
+quantidades = [60, 10, 15]
+
+# Gráfico de barras
+plt.bar(participantes, quantidades, color=['blue', 'green', 'orange'])
+plt.title('Participantes do Evento Escolar')
+plt.xlabel('Categorias')
+plt.ylabel('Quantidade de pessoas')
+plt.show()
+
+# Gráfico de pizza
+plt.pie(quantidades, labels=participantes, autopct='%1.1f%%')
+plt.title('Porcentagem de Participantes')
+plt.show()
